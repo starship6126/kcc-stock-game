@@ -20,9 +20,9 @@ const COMPANY_COLORS: Record<CompanyId, string> = {
 };
 
 const COMPANY_LABELS: Record<CompanyId, string> = {
-  energy: "에너지",
-  aviation: "항공",
-  shopping: "쇼핑",
+  energy: "삼성전자",
+  aviation: "현대",
+  shopping: "카카오",
 };
 
 const formatCurrency = (value: number) =>
@@ -274,7 +274,7 @@ export default function Home() {
                 <Line
                   type="monotone"
                   dataKey="energy"
-                  name="에너지"
+                  name="삼성전자"
                   stroke={COMPANY_COLORS.energy}
                   strokeWidth={2.2}
                   connectNulls={false}
@@ -284,7 +284,7 @@ export default function Home() {
                 <Line
                   type="monotone"
                   dataKey="aviation"
-                  name="항공"
+                  name="현대차"
                   stroke={COMPANY_COLORS.aviation}
                   strokeWidth={2.2}
                   connectNulls={false}
@@ -294,7 +294,7 @@ export default function Home() {
                 <Line
                   type="monotone"
                   dataKey="shopping"
-                  name="쇼핑"
+                  name="카카오"
                   stroke={COMPANY_COLORS.shopping}
                   strokeWidth={2.2}
                   connectNulls={false}
